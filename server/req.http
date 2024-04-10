@@ -1,0 +1,78 @@
+get http://localhost:4000/user-api/users
+
+###
+get http://localhost:4000/cart-api/carts
+###
+get http://localhost:4000/user-api/user/Hanisha11
+
+###
+get http://localhost:4000/product-api/products
+
+###
+post http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "username":"rav",
+    "password":"ravi",
+    "email":"tejesh",
+    "address":"dadada"
+}
+
+###
+post http://localhost:4000/product-api/product
+Content-Type: application/json
+
+{
+    "productname":"mobile",
+    "price":"2" ,
+    "description":"mobile"
+}
+
+###
+post http://localhost:4000/cart-api/cart
+Content-Type: application/json
+
+{
+    "productname":"mobile",
+    "price":"2" ,
+    "description":"mobile"
+}
+
+###
+put http://localhost:4000/product-api/product/Samsung
+Content-Type: application/json
+
+{
+    "productname":"Sony",
+    "price":"5" ,
+    "description":"mobiles"
+}
+
+###
+post http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "username":"ravi",
+    "password":"rav" 
+}
+
+###
+put http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "username":"kiran",
+    "password":"ravi",
+    "email":"ravi@mail.com",
+}
+
+###
+delete http://localhost:4000/user-api/user/ravi
+
+###
+delete http://localhost:4000/product-api/product/Sony
+
+###
+delete http://localhost:4000/cart-api/cart/mobile
